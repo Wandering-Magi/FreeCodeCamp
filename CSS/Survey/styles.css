@@ -1,0 +1,14 @@
+.titlecard {
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+h1[id="title"],
+p[id="description"] {
+  text-align: center;
+}
+
+.charsex {
+  display: inline;
+}

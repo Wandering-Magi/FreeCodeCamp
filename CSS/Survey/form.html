@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FFXIV Dawntrail Character Survey</title>
+    <div>
+      <image class="titlecard" src="dt-logo.jpg" />
+    </div>
+    <h1 id="title">FFXIV Dawntrail Character Survey</h1>
+    <p id="description">
+      In preperation for launching Dawntrail in July we are conducting a survey
+      about player characters.
+    </p>
+  </head>
+  <body>
+    <form id="survey-form">
+      <fieldset id="player-info">
+        <label for="name" id="name-label"
+          >Name<input
+            id="name"
+            type="text"
+            placeholder="Please enter your name"
+            required
+        /></label>
+        <label for="email" id="email-label"
+          >Email<input
+            type="email"
+            id="email"
+            placeholder="Please enter your email"
+            required
+        /></label>
+        <label for="number" id="number-label"
+          >Age<input
+            type="number"
+            id="number"
+            min="13"
+            max="120"
+            placeholder="Age"
+        /></label>
+      </fieldset>
+      <fieldset id="character-info">
+        <p class="character-description">
+          Some questions about your main character:
+        </p>
+        <label for="dropdown">What race are they?</label>
+        <select id="dropdown">
+          <option>(Select one)</option>
+          <option>Hyur</option>
+          <option>Elezen</option>
+          <option>Au'ra</option>
+          <option>Roegaeden</option>
+          <option>Miquo'te</option>
+          <option>Hrothgar</option>
+        </select>
+        <div class="charsex">
+          <p>What sex are they?</p>
+          <label for="sex-m"
+            ><input
+              id="sex-m"
+              type="radio"
+              name="character-sex"
+              value="1"
+              checked
+            />
+            Male</label
+          >
+          <label for="sex-f"
+            ><input id="sex-f" type="radio" name="character-sex" value="2" />
+            Female</label
+          >
+        </div>
+        <div>
+          <p>What role(s) do they participate in? (Select all that apply)</p>
+        </div>
+        <label for="tank"
+          ><input type="checkbox" name="tank" value="1" /> Tank</label
+        >
+        <label for="healer"
+          ><input type="checkbox" name="healer" value="2" /> Healer</label
+        >
+        <label for="dps"
+          ><input type="checkbox" name="dps" value="3" /> DPS</label
+        >
+        <label for="crafting"
+          ><input type="checkbox" name="crafting" value="4" /> Crafting</label
+        >
+      </fieldset>
+      <label for="char-info"
+        >Tell us your favorite part about your character:
+        <textarea id="char-info" name="char-info" rows="3" cols="30"></textarea>
+      </label>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+  <footer></footer>
+</html>
